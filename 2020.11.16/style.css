@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+}
+
+.container {
+    height: 600px;
+    width: 1200px;
+    background: #dedede;
+    margin: calc(50vh - 300px) auto;
+    border-radius: 20px;
+    display: flex;
+    overflow: hidden;
+}
+.left {
+    width: 20%;
+}
+.right {
+    width: 80%;
+    background: pink;
+    border-radius: 20px 0 0 0;
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+}
+.box {
+    width: calc(80% - 50px);
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+.card {
+    height: 225px;
+    width: 40%;
+    background: crimson;
+    border-radius: 20px;
+}
+.column {
+    height: 500px;
+    width: 20%;
+    background: crimson;
+    border-radius: 20px;
+}
