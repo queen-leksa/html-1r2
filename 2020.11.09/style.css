@@ -1,0 +1,78 @@
+.card {
+    width: 100px;
+    /* height: 150px; */
+    background: #54FFC6;
+    color: #ED5B37;
+    border: 1px solid;
+    border-radius: 8px;
+    font: 100px / 1.5 sans-serif;
+    text-align: center;
+}
+
+.container {
+    background: #A12405;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    /* 
+        flex-direction
+        Направление основной оси 
+        row - с лева на право
+        row-reverse - с права на лево
+        column - с верху вниз
+        column-reverse - с низу вверх
+    */
+    justify-content: center;
+    /*
+        justify-content
+        Расположение элементов вдоль основной оси
+        flex-start (с начала оси)
+        flex-end (от конца оси)
+        center
+        space-between (первый элемент находится в начале оси, последний элемент располагается в коне оси, а между всеми элементами появляется равномерный отступ
+        space-around - равномерный отступ не между тегами, а вокруг каждого тега
+    */
+    align-items: center;
+    /*
+        align-items
+        Расположение элементов вдоль поперечной оси (перпендикулярной)
+        stretch - растянуть по размеру родителя (если у флек-элемента нет высоты!!!)
+        flex-start (с начала оси)
+        flex-end (от конца оси)
+        center
+        baseline (выравнивает элементы по нижнему краю контента)
+    */
+}
+
+ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+header {
+    height: 100px;
+    background: #54FFC6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    font: 20px sans-serif;
+    color: #ED5B37;
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+.soc {
+    display: flex;
+}
+.soc li {
+    margin-left: 10px;
+}

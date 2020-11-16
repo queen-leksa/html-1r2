@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Box Model</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        /* .daddy {
+            background: yellow;
+            border: solid;
+        } */
+        a {
+            text-decoration: none; /* underline | overline | line-through | none */
+            color: inherit; /* цвет как у родителя */
+        }
+        .box {
+            background: red;
+            /* px, %, vh - viewport height, vw - viewport width */
+            width: 300px; /* ширина */
+            /* height: 50vh; /* высота - лучше в % не использовать! */
+            /* height: 150px;
+            min-height: 100px;
+            max-height: 200px; */
+            overflow: auto; /* выпадение контента из блока: visible | hidden | scroll | auto */
+            border-width: 5px;
+            border-color: blueviolet;
+            border-style: solid; /* стиль рамочки: none | solid - прямая сплошная линия | double | dotted | dashed */
+            border: solid 5px;
+            border-right-style: dashed;
+            text-align: justify;
+            line-height: 1;
+            padding: 20px 100px 50px; /* внутренний отступ */
+            margin: 30px auto 100px;
+        }
+        .menu {
+            width: 510px;
+            margin: 0 auto;
+            background: limegreen;
+            list-style-type: none; /* none | disk | square | circle */
+            font-size: 0;
+        }
+        .menu li { /*для тегов li внутри тегов с классом menu*/
+            height: 50px;
+            width: calc(100% / 3 - 2px);
+            border: 1px solid;
+            font: 20px  sans-serif;
+            text-align: center;
+            display: inline-block; /* block | inline |inline-block */
+            line-height: 50px; /* Высота строки = высота блока => текст по центру по вертикали!!! */
+        }
+        .menu a {
+            background: #dedede;
+            display: block;
+        }
+        .menu a:hover {
+            background: coral;
+        }
+    </style>
+</head>
+<body>
+    <!-- ul.menu>li*3>a{link $} -->
+    <ul class="menu">
+        <li><a href="">link 1</a></li>
+        <li><a href="">link 2</a></li>
+        <li><a href="">link 3</a></li>
+    </ul>
+    <!-- .box>lorem85 -->
+    <div class="daddy">
+        <div class="box">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla porro cupiditate omnis aperiam natus laboriosam, voluptatibus expedita harum alias perspiciatis accusantium soluta id quisquam dicta tempora ut aliquid delectus quos quae facilis? Nobis dolore mollitia odit consectetur dolores. Distinctio error qui placeat quas blanditiis esse voluptatem! Corrupti voluptatem placeat pariatur repudiandae dolores autem libero inventore. Minus voluptatem, explicabo iusto minima molestiae rem dolor ducimus pariatur et, ipsam quibusdam maiores doloremque officiis, cumque veniam natus nam! Laboriosam, officiis? Sed hic velit sequi tempora temporibus! Ipsum, excepturi.
+        </div>
+        <div class="box">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla porro cupiditate omnis aperiam natus laboriosam, voluptatibus expedita harum alias perspiciatis accusantium soluta id quisquam dicta tempora ut aliquid delectus quos quae facilis? Nobis dolore mollitia odit consectetur dolores. Distinctio error qui placeat quas blanditiis esse voluptatem! Corrupti voluptatem placeat pariatur repudiandae dolores autem libero inventore. Minus voluptatem, explicabo iusto minima molestiae rem dolor ducimus pariatur et, ipsam quibusdam maiores doloremque officiis, cumque veniam natus nam! Laboriosam, officiis? Sed hic velit sequi tempora temporibus! Ipsum, excepturi.
+        </div>
+    </div>
+</body>
+</html>

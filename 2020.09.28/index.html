@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        /* 
+            * - универсальный селектор (применяет стили для всех тегов на странице)
+            p - селектор по тегу (в данном случае, применяет стили для всех тегов <p></p>)
+            # - селектор по идентификатору (атрибут id)
+            . - селектор по классу (атрибут class)
+        */
+        * {
+            color: green;
+        }
+        p {
+            text-align: justify;
+            color: pink;
+        }
+        h1 {
+            color: violet;
+        }
+        #special {
+            font-size: 30px; /* размер шрифта */
+            text-indent: 30px; /* красная строка */
+        }
+        .bg_dark {
+            /* background-color: grey; */
+            background-color: #222; /*#222222 => rgb(34,34,34)*/
+            color: white;
+        }
+        .txt_blue {
+            /* color: blue; */
+            color: rgb(140,218,255);
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- h1>lorem3^p*3>lorem70 -->
+    <!-- h1>lorem3^p>lorem70^h3>lorem10^p*2>lorem70 -->
+    <h1>Lorem, ipsum dolor.</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ipsa deleniti esse enim quis magnam fuga tempora, odit accusamus temporibus molestiae corporis? <span class="txt_blue">Vero, dolorem odit error optio nesciunt eligendi maiores qui dolore voluptate eveniet exercitationem adipisci temporibus tempora dolor necessitatibus quis iste numquam saepe amet quaerat consequatur.</span> Nemo consequuntur quam tenetur ut. Voluptatibus deserunt quis, officiis fugit a maiores? Blanditiis sint distinctio vel id iste labore incidunt, facere excepturi eius.</p>
+    <h3 class="bg_dark txt_blue">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, tempore!</h3>
+    <p id="special">Possimus, dolore! Dolorem vel odit sequi minima sit eaque unde, nam eum placeat vitae atque ipsa, veritatis nesciunt similique voluptatibus ad. Laborum error exercitationem dolore, doloribus nesciunt quasi, ipsum totam eveniet autem ab mollitia veritatis? Unde, hic error dolorem animi recusandae dignissimos earum amet, doloremque numquam, quas tempore voluptates inventore explicabo! Eius in minima atque enim. Fugit reiciendis nulla, quas hic voluptas velit saepe id totam vel facilis debitis nostrum.</p>
+    <p class="bg_dark">Commodi, totam enim! Consequatur, aperiam optio ex saepe quia, ducimus suscipit, aliquam dicta doloribus accusamus fuga facere nam quae voluptates placeat culpa veniam quidem corporis. Quas, atque consectetur excepturi aliquam assumenda ad natus perferendis dolores debitis? Explicabo voluptatum accusamus magni reprehenderit optio, hic fugit distinctio quibusdam nulla quas consequatur incidunt, quod ex alias! Perferendis, hic impedit exercitationem minus atque recusandae corporis? Minima fuga omnis consectetur temporibus labore sint magni nobis.</p>
+</body>
+</html>
