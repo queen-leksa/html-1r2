@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+}
+p {
+    margin: 30px auto;
+    width: 700px;
+    text-align: justify;
+    font: 20px sans-serif;
+}
+/*
+    ::before (перед тегом)
+    ::after (после тега)
+*/
+p::before { /* данный селектор будет создавать псевдоэлемент с контентом перед всеми абзацами <p> */
+    content: "Начало: ";
+    color: #f00;
+}
+p::after {
+    color: #00f;
+    content: attr(title);
+}
+h1 {
+    width: 700px;
+    margin: 30px auto;
+    color: #393;
+    font: 50px fantasy;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+h1::before,
+h1::after {
+    content: "";
+    width: 50px;
+    height: 50px;
+    background: #f80;
+    display: block;
+}
+.daddy {
+    width: 700px;
+    margin: 0 auto 30px;
+    height: 500px;
+    background: #f8f;
+    position: relative;
+}
+.child {
+    width: 100px;
+    height: 100px;
+    position: static; /* Есть у ВСЕХ тегов в мире HTML */
+}
+.child1 {
+    background: #f00;
+    position: absolute;
+    width: auto;
+    height: auto;
+    /*
+        абсолютное позиционирование относительно границ ближайшего родителя, у которого position отличен от static
+        Если такого родителя нет - располагается относительно границ вьюпорта (экрана)
+        Без сохранения своего статичного места
+    */
+    /* top || left || right || bottom */
+    top: 50px;
+    bottom: 50px;
+    left: 50px;
+    right: 50px;
+    z-index: 2;
+}
+.child2 {
+    background: #0f0;
+    position: relative; /* относительно своего метоположения, с сохранением своего статичного места */
+    top: 150px;
+    left: 20px;
+    z-index: 10; /* По умолчанию все теги с position != static имеют z-index = 0*/
+}
+.child3 {
+    background: #00f;
+    position: fixed; /* всегда располагается относительно границ вьюпорта (экрана) */
+    width: 700px;
+    height: 200px;
+    top: calc(50vh - 200px);
+    left: calc(50% - 350px);
+}
